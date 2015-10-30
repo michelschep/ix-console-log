@@ -20,17 +20,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <p>An example of <code>&lt;ix-console-log&gt;</code>:</p>
 
-    <button>Say Something</button>
-
-    <ix-console-log author='{"name": "Lord Meowser", "image": "http://placekitten.com/g/200/300"}' fancy>
-      <h2>Hello ix-console-log</h2>
+    <ix-console-log title="JSON", object='{"name":"michel"}'>
     </ix-console-log>
 
-    <script>
-      document.querySelector('button').addEventListener('click', function() {
-        alert(document.querySelector('ix-console-log').sayHello('Hallo!'));
-      });
-    </script>
+    <ix-console-log title="String", object='some string'>
+    </ix-console-log>
 
   </body>
 </html>
